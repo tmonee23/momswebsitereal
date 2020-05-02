@@ -1,0 +1,48 @@
+.navbar-container{
+    display: flex;
+    margin-bottom: 1vh;
+    position: absolute;
+    bottom: 5vh;
+    width: 100%;
+    text-align: center;
+    justify-content: flex-end;
+    align-content: flex-end;
+    overflow: hidden;
+}
+
+li{
+    list-style: none;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navbar-active-link{
+    color: rgb(56, 56, 56);
+    border: 3px solid rgb(56, 56, 56);
+    border-radius: 1rem;
+    padding: .5rem;
+    transition: ease-in .5s;
+
+}
+
+.navbar-link{
+    border: none;
+    color: rgb(56, 56, 56);
+    transition: ease-in .5s;
+
+}
+
+a{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    font-family: 'Merienda One', cursive;
+}
+
+a:hover{
+    color: rgb(56, 56, 56);
+    border: 3px solid rgb(56, 56, 56);
+    border-radius: 1rem;
+    padding: .5rem;
+}
