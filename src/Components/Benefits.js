@@ -15,6 +15,7 @@ import TenthPose from "../Components/Photocomponents/Benefits/TenthPicture"
 import EleventhPose from "../Components/Photocomponents/Benefits/EleventhPicture"
 import TwelthPose from "../Components/Photocomponents/Benefits/TwelthPicture"
 import ThirteenthPose from "../Components/Photocomponents/Benefits/ThirteenthPicture"
+import FourteenthPose from "../Components/Photocomponents/Benefits/FourteenthPicture"
 
 export default function Benefits() {
 
@@ -32,7 +33,8 @@ export default function Benefits() {
                             {id: "ten", display: <TenthPose/>},
                             {id: "eleven", display: <EleventhPose/>},
                             {id: "twelve", display: <TwelthPose/>},
-                            {id: "thirteen", display: <ThirteenthPose/>}
+                            {id: "thirteen", display: <ThirteenthPose/>},
+                            {id: "fourteen", display: <FourteenthPose/>}
                         ]
 
     return (
@@ -71,43 +73,46 @@ export default function Benefits() {
                 })}
                 <div className="buttonContainer">
                 <button onClick={() => {onSelectPoseHandler("one")}} className="benefitsPoseButtonOne benefitsPoseButton">
-                    One
+                    1
                 </button>
                 <button onClick={() => {onSelectPoseHandler("two")}} className="benefitsPoseButtonTwo benefitsPoseButton">
-                    Two
+                    2
                 </button>
                 <button onClick={() => {onSelectPoseHandler("three")}} className="benefitsPoseButtonThree benefitsPoseButton">
-                    Three
+                    3
                 </button>
                 <button onClick={() => {onSelectPoseHandler("four")}} className="benefitsPoseButtonFour benefitsPoseButton">
-                    Four
+                    4
                 </button>
                 <button onClick={() => {onSelectPoseHandler("five")}} className="benefitsPoseButtonFive benefitsPoseButton">
-                    Five
+                    5
                 </button>
                 <button onClick={() => {onSelectPoseHandler("six")}} className="benefitsPoseButtonSix benefitsPoseButton">
-                    Six
+                    6
                 </button>
                 <button onClick={() => {onSelectPoseHandler("seven")}} className="benefitsPoseButtonSeven benefitsPoseButton">
-                    Seven
+                    7
                 </button>
                 <button onClick={() => {onSelectPoseHandler("eight")}} className="benefitsPoseButtonEight benefitsPoseButton">
-                    Eight
+                    8
                 </button>
                 <button onClick={() => {onSelectPoseHandler("nine")}} className="benefitsPoseButtonNine benefitsPoseButton">
-                    Nine
+                    9
                 </button>
                 <button onClick={() => {onSelectPoseHandler("ten")}} className="benefitsPoseButtonTen benefitsPoseButton">
-                    Ten
+                    10
                 </button>
                 <button onClick={() => {onSelectPoseHandler("eleven")}} className="benefitsPoseButtonElevel benefitsPoseButton">
-                    Eleven
+                    11
                 </button>
                 <button onClick={() => {onSelectPoseHandler("twelve")}} className="benefitsPoseButtonTwelve benefitsPoseButton">
-                    Twelve
+                    12
                 </button>
                 <button onClick={() => {onSelectPoseHandler("thirteen")}} className="benefitsPoseButtonThirteen benefitsPoseButton">
-                    Thirteen
+                    13
+                </button>
+                <button onClick={() => {onSelectPoseHandler("fourteen")}} className="benefitsPoseButtonFourteen benefitsPoseButton">
+                    14
                 </button>
                 </div>
                 
