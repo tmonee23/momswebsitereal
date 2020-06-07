@@ -2,6 +2,9 @@
 @import "./Header.css";
 @import "./Navbar.css";
 @import "./Home.css";
+@import "./Benefits.css";
+@import "./About.css";
+@import "./Testimonials.css";
 
 body {
   margin: 0;
@@ -14,4 +17,5 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;  
+  overflow: hidden;
 }

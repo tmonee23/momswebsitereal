@@ -1,0 +1,71 @@
+.aboutProfilePicture{
+    border-radius: 100%;
+    height: 32vh;
+    width: 12vw;
+}
+
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.about-header-container{
+    position: absolute;
+    left: .5vw;
+    overflow: hidden;
+}
+
+.background-list-container{
+    position: absolute;
+    right: .5vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    height: 60vh;
+    width: 60vw;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 1rem;
+}
+
+.about-header-text{
+    width: 35vw;
+    height: 20vh;
+    line-height: 1.7rem;
+}
+
+.about-text-bullet{
+    font-size: .9rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.background-list-container::-webkit-scrollbar {
+    width: .5rem;
+}
+   
+.background-list-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    height: 90%;
+}
+   
+.background-list-container::-webkit-scrollbar-thumb {
+    background-color: rgb(18,122,146);
+    outline: 1px solid slategrey;
+    border-radius: 1rem;
+  }

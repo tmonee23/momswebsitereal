@@ -1,0 +1,28 @@
+.test-container{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.test-container-inactive{
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.testimonials-content{
+    margin-top: 5rem;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 1s ease;
+}
+
+.test-container-content{
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+

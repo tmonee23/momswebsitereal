@@ -9,6 +9,7 @@ import Homepage from "./Components/Homepage"
 import Header from "./Components/Header"
 import Benefits from "./Components/Benefits"
 import About from "./Components/About"
+import Testimonials from "./Components/Testimonials"
 
 
 export default function App() {
@@ -17,11 +18,14 @@ export default function App() {
       <div className="app-container">
         <Header/>
         <Switch>
-          <Route path="/about">
+          <Route path="/About Me">
             <About/>
           </Route>
           <Route path="/benefits">
             <Benefits/>
+          </Route>
+          <Route path="/testimonials">
+            <Testimonials/>
           </Route>
           <Route path="/">
             <Homepage/>

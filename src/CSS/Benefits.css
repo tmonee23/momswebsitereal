@@ -1,0 +1,78 @@
+.benefitsContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn{
+        from{transform: scale(0);}
+        to{transform: scale(1);}
+    }
+
+.shownPoseContainer{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+}
+
+.poseCard{
+    height: 0vh;
+    width: 0vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 0;
+}
+
+.firstPose{
+    position: absolute;
+    margin-top: -47vh;
+    box-shadow: 0px 0px 91px 50px #1b869467;
+    border-radius: 1rem;
+    height: 99vh;
+    width: 90vw;
+    z-index: 3 ;
+    animation: makeLarge 1s ease;
+}
+
+@keyframes makeLarge{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+.closePoseBtn{
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    border-radius: 1rem;
+    z-index: 3;
+}
+
+.centralBenefitsPicture{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 91px 50px #1b869467;
+}
+
+.buttonContainer{
+    position: relative;
+}
+
+.benefitsPoseButton{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 0px 91px 50px #1b869467;
+}
+
+
+
+
+
+
