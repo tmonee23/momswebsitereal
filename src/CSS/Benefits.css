@@ -32,7 +32,7 @@
 
 .firstPose{
     position: absolute;
-    margin-top: -47vh;
+    margin-top: -50vh;
     box-shadow: 0px 0px 91px 50px #1b869467;
     border-radius: 1rem;
     height: 99vh;
@@ -54,6 +54,7 @@
 }
 
 .centralBenefitsPicture{
+    position: relative;
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -61,7 +62,9 @@
 }
 
 .buttonContainer{
-    position: relative;
+    position: absolute;
+    width: 80%;
+    height: 50%;
 }
 
 .benefitsPoseButton{
@@ -69,6 +72,77 @@
     height: 50px;
     width: 50px;
     box-shadow: 0px 0px 91px 50px #1b869467;
+}
+
+.benefitsPoseButtonOne{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+.benefitsPoseButtonTwo{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+.benefitsPoseButtonThree{
+    position: absolute;
+    bottom: 35%;
+    left: 20%;
+}
+.benefitsPoseButtonFour{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.benefitsPoseButtonFive{
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+}
+.benefitsPoseButtonSix{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+.benefitsPoseButtonSeven{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+.benefitsPoseButtonEight{
+    position: absolute;
+    top: 5%;
+    right: 50%;
+}
+.benefitsPoseButtonNine{
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+}
+.benefitsPoseButtonTen{
+    position: absolute;
+    top: 20%;
+    right: 35%;
+}
+.benefitsPoseButtonEleven{
+    position: absolute;
+    bottom: 20%;
+    right: 35%;
+}
+.benefitsPoseButtonTwelve{
+    position: absolute;
+    top: 35%;
+    right: 20%;
+}
+.benefitsPoseButtonThirteen{
+    position: absolute;
+    bottom: 35%;
+    right: 20%;
+}
+.benefitsPoseButtonFourteen{
+    position: absolute;
+    top: 45%;
+    right: 5%;
 }
 
 

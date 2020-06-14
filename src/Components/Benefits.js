@@ -102,7 +102,7 @@ export default function Benefits() {
                 <button onClick={() => {onSelectPoseHandler("ten")}} className="benefitsPoseButtonTen benefitsPoseButton">
                     10
                 </button>
-                <button onClick={() => {onSelectPoseHandler("eleven")}} className="benefitsPoseButtonElevel benefitsPoseButton">
+                <button onClick={() => {onSelectPoseHandler("eleven")}} className="benefitsPoseButtonEleven benefitsPoseButton">
                     11
                 </button>
                 <button onClick={() => {onSelectPoseHandler("twelve")}} className="benefitsPoseButtonTwelve benefitsPoseButton">

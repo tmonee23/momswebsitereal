@@ -34,7 +34,7 @@ export default function Header() {
                 Looking forward to sharing my experience of practicing yoga 
             </p>
             <p className="openingText">
-                for over 20 years and motivate you to get started!
+                for over 20 years and motivating you to get started!
             </p>
             <p className="openingText">
                 - Namaste, Lana
