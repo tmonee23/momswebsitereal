@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 export default function Navbar() {
     const [activeTab, setActiveTab] = useState(window.location.href.split("/")[3])
-    const tabs = ["Home", "Benefits", "Testimonials" ,"About Me"]
+    const tabs = ["Home", "Benefits", "Testimonials", "Reiki", "Meditation", "Nutrition", "Gallary" ,"About Me"]
     const [activeClassName, setActiveClassName] = useState("navbar-container-inactive");
 
     function OnChangeActiveTab(tab){

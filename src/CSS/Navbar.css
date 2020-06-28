@@ -6,10 +6,11 @@
     background-color: rgba(255,255,255,0.8);
     display: flex;
     flex-direction: column;
-    width: 20%;
-    height: 500px;
+    width: 15%;
+    height: auto;
     text-align: center;
     animation: moveLeft 1s ease;
+    z-index: 10;
 }
 
 .navbar-container-inactive{
@@ -18,9 +19,10 @@
 
 .navbar-icon{
     position: absolute;;
-    width:50px;
+    width: auto;
+    height: 5vh;
     left:2vw;
-    top:21vh;
+    top:23vh;
     border-radius: 10%;
     cursor: pointer;
 }
@@ -36,7 +38,8 @@
 
 li{
     list-style: none;
-    margin-top: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     font-weight: bold;
     font-size: 1rem;
 }

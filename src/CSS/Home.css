@@ -16,7 +16,7 @@
 
 .headstand-homepage-image{
     height: 50vh;
-    width: 9vw;
+    width: auto;
     border-radius: .5rem;
     position: absolute;
     left: 10vw;
@@ -27,7 +27,7 @@
 
 .other-homepage-image{
     height: 20vh;
-    width: 12vw;
+    width: auto;
     border-radius: .5rem;
     position: absolute;
     right: 10vw;
