@@ -1,21 +1,44 @@
 .navbar-container{
-    display: flex;
-    margin-bottom: 1vh;
+    border:1px solid black;
     position: absolute;
-    bottom: 9vh;
-    width: 100%;
+    right: 0px;
+    top: 0vh;
+    background-color: rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 500px;
     text-align: center;
-    justify-content: flex-end;
-    align-content: flex-end;
-    overflow: hidden;
+    animation: moveLeft 1s ease;
+}
+
+.navbar-container-inactive{
+    display:none;
+}
+
+.navbar-icon{
+    position: absolute;;
+    width:50px;
+    left:2vw;
+    top:21vh;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.navbar-icon:hover{
+    background-color: rgba(0,0,0,0.2);
+    animation: dim 0.5s ease;
+}
+
+.navbar-icon:active{
+    background-color: rgba(0,0,0,0.4);
 }
 
 li{
     list-style: none;
-    margin-right: 1vw;
-    margin-left: 1vw;
+    margin-top: 4vh;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .navbar-active-link{
@@ -24,14 +47,12 @@ li{
     border-radius: 1rem;
     padding: .5rem;
     transition: ease-in .5s;
-
 }
 
 .navbar-link{
     border: none;
     color: rgb(56, 56, 56);
     transition: ease-in .5s;
-
 }
 
 a{
@@ -45,4 +66,23 @@ a:hover{
     border: 3px solid rgb(56, 56, 56);
     border-radius: 1rem;
     padding: .5rem;
+}
+
+@keyframes dim{
+    from {
+        background-color: rgba(0,0,0,0);
+      }
+    
+      to {
+        background-color: rgba(0,0,0,0.2);
+      }
+}
+
+@keyframes moveLeft{
+    from{
+        right: -20%;
+    }
+    to{
+        right: 0%;
+    }
 }
