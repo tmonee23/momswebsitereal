@@ -1,11 +1,19 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import HeadstandPhoto from "./Photocomponents/Headstand"
 import HomepagePhoto from "./Photocomponents/HomepageTwo"
 
+import {TweenMax, Power3} from "gsap"
+
 export default function Header() {
 
+    let pageContainer = useRef(null)
+
+    useEffect(() => {
+        TweenMax.from(pageContainer, 1, {opacity:0, ease:Power3.easeInOut})
+    }, [])
+
     return(
-        <div className="page-container">
+        <div ref={el => pageContainer = el} className="page-container">
             <div className="home-content">
             <HeadstandPhoto/>
             <div className="openingTextContainer">

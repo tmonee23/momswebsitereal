@@ -5,13 +5,8 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    animation: fadeIn 1s ease;
     }
 
-    @keyframes fadeIn{
-        from{transform: scale(0);}
-        to{transform: scale(1);}
-    }
 
 .shownPoseContainer{
     display: flex;
@@ -38,13 +33,9 @@
     height: 99vh;
     width: 90vw;
     z-index: 3 ;
-    animation: makeLarge 1s ease;
+    opacity: 0;
 }
 
-@keyframes makeLarge{
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
 .closePoseBtn{
     position: absolute;
     top: 1vh;
@@ -59,6 +50,7 @@
     width: 200px;
     border-radius: 50%;
     box-shadow: 0px 0px 91px 50px #1b869467;
+    opacity: 0.2;
 }
 
 .buttonContainer{

@@ -1,27 +1,28 @@
 .header-container{
     width: 100vw;
     height: 40vh;
-    align-content: center;
-    justify-content: center;
     text-align: center;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-text{
-    position: absolute;
-    width: 100%;
-    bottom: 6vh;
+    margin-top: 10vh;
     color: white;
     font-size: 2.7rem;
     font-weight: bold;
+    align-self: center;
+}
+
+.header-container > a:hover{
+    border: 0px solid white;
 }
 
 .logo-image{
+    margin-top: 6vh;
     height: 10vh;
     width: auto;
-    position: absolute;
-    bottom: 9vh;
-    right: 3vw;
     border-radius: 50%;
 }
 

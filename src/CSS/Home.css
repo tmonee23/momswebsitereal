@@ -6,12 +6,6 @@
     width: 100vw;
     align-items: center;
     justify-content: center;
-    animation: fadeIn 1s ease;
-}
-
-@keyframes fadeIn{
-    from{transform: scale(0);}
-    to{transform: scale(1);}
 }
 
 .headstand-homepage-image{

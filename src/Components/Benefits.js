@@ -1,5 +1,7 @@
-import React from 'react'
-import {useState} from "react"
+import React, { useReducer } from 'react'
+import {useState, useEffect, useRef} from "react"
+
+import {TweenMax, Power3} from 'gsap'
 
 import CentralPicture from "../Components/Photocomponents/Benefits/CentralPicture"
 import FirstPose from "../Components/Photocomponents/Benefits/FirstPose"
@@ -19,6 +21,8 @@ import FourteenthPose from "../Components/Photocomponents/Benefits/FourteenthPic
 
 export default function Benefits() {
 
+    let pageContainer = useRef(null)
+
     const [currentPose, setCurrentPose] = useState("empty")
     const picturePoses = [  {id: "one", display: <FirstPose/>}, 
                             {id: "two", display: <SecondPose/>}, 
@@ -37,8 +41,12 @@ export default function Benefits() {
                             {id: "fourteen", display: <FourteenthPose/>}
                         ]
 
+    useEffect(() => {
+        TweenMax.from(pageContainer, 1, {opacity:0, ease:Power3.easeInOut})
+    }, [])
+
     return (
-        <div className="page-container">
+        <div ref={el => pageContainer = el} className="page-container">
             <div className="benefitsContent">
                 {picturePoses.map(pose => {
                     if(currentPose === "empty"){

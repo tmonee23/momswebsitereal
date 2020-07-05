@@ -1,29 +1,41 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import {Link} from "react-router-dom"
+
+import {TweenMax, Power3} from 'gsap'
 
 export default function Navbar() {
     const [activeTab, setActiveTab] = useState(window.location.href.split("/")[3])
     const tabs = ["Home", "Benefits", "Testimonials", "Reiki", "Meditation", "Nutrition", "Gallary" ,"About Me"]
-    const [activeClassName, setActiveClassName] = useState("navbar-container-inactive");
+    const [navbarIsOpen, setNavbarIsOpen] = useState(false);
 
     function OnChangeActiveTab(tab){
         setActiveTab(tab)
     }
 
     function OnChangeActiveClass(){
-        if(activeClassName != "navbar-container"){
-            setActiveClassName("navbar-container");
+        if(!navbarIsOpen){            
+            setNavbarIsOpen(true);
         }else{
-            setActiveClassName("navbar-container-inactive");
+            setNavbarIsOpen(false);
         }
     }
+
+    let navbarContainer = useRef(null);
+
+    useEffect(()=>{
+        if(!navbarIsOpen){
+            TweenMax.to(navbarContainer,0.5, {left: "-15%", ease:Power3.easeIn});
+        }else{
+            TweenMax.to(navbarContainer,0.5, {left: "-2%", ease:Power3.easeIn});
+        }
+    }, [navbarIsOpen])
 
     return (
         <div>
             <div>
                 <img className="navbar-icon" onClick={()=>OnChangeActiveClass()} alt="menuButton" src="https://momswebsitereal.s3.eu-central-1.amazonaws.com/Icons/588a6507d06f6719692a2d15.png"></img>
             </div>
-            <nav className={activeClassName}>
+            <nav ref={el => navbarContainer = el} className="navbar-container">
                 {tabs.map(tab => {
                     if(tab === activeTab){
                         return(
